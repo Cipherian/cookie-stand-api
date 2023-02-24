@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="flex items-center justify-center h-screen">
+    <form class="bg-yellow-100 p-4 rounded-md w-3/4 max-w-md border border-black" action="" method="POST" >
+        {% csrf_token %}
+      <div class="text-center justify-center">
+        <h1 class="text-2xl font-medium my-4 text-center">Update Store</h1>
+        </div>
+        <div class="form-group border border-black">
+            <label for="{{ form.location.id_for_label }}" class="block text-sm font-medium leading-5 text-gray-700">Location</label>
+            {{ form.location }}
+        </div>
+        <div class="form-group border border-black">
+            <label for="{{ form.owner.id_for_label }}" class="block text-sm font-medium leading-5 text-gray-700 ">Owner</label>
+            {{ form.owner }}
+        </div>
+        <div class="form-group border border-black">
+            <label for="{{ form.description.id_for_label }}" class="block text-sm font-medium leading-5 text-gray-700">Description</label>
+            {{ form.description }}
+        </div>
+        <div class="form-group border border-black">
+            <label for="{{ form.hourly_sales.id_for_label }}" class="block text-sm font-medium leading-5 text-gray-700">Hourly Sales</label>
+            {{ form.hourly_sales }}
+        </div>
+        <div class="form-group border border-black">
+            <label for="{{ form.minimum_customers_per_hour.id_for_label }}" class="block text-sm font-medium leading-5 text-gray-700">Minimum Customers</label>
+            {{ form.minimum_customers_per_hour }}
+        </div>
+        <div class="form-group border border-black">
+            <label for="{{ form.maximum_customers_per_hour.id_for_label }}" class="block text-sm font-medium leading-5 text-gray-700">Maximum Customers</label>
+            {{ form.maximum_customers_per_hour }}
+        </div>
+        <div class="form-group border border-black">
+            <label for="{{ form.average_cookies_per_sale.id_for_label }}" class="block text-sm font-medium leading-5 text-gray-700">Average Cookie Sale</label>
+            {{ form.average_cookies_per_sale }}
+        </div>
+        <div class="my-4 justify-center items-center h-full w-40">
+            <input type="submit" value="UPDATE" class="h-full w-full bg-blue-500 text-white rounded-md justify-center hover:bg-blue-600">
+        </div>
+    </form>
+</div>
+
+
+
+{% endblock content %}
