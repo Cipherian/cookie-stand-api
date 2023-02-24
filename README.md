@@ -1,11 +1,12 @@
-# Lab: 34 - Putting it All Together
 
----
+# Lab 41
 
-### Project: Putting it All Together
-### Authors: Daniel Brott & Alejandro Rivera
+## Deployed back-end
 
----
+- https://cookie-stand-api-liart.vercel.app/
+
+### Authors: Daniel Brott
+
 
 ### Setup
 
@@ -34,7 +35,7 @@
   * Windows: http://localhost:8000/admin/
     * username: admin
     * password: admin
+    * username: dan
+    * password: dan
 
-### Tests
 
-* **run:** python3 manage.py test
